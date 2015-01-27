@@ -39,6 +39,7 @@ class Ui_MainWindow(object):
 		self.tab = QtGui.QWidget()
 		self.tab.setObjectName(_fromUtf8("tab"))
 		self.tabWidget.addTab(self.tab, _fromUtf8(""))
+		self.tabWidget.setStyleSheet("QTabBar::tab{ height: 30px; width: 100px; }")
 		self.tab_2 = QtGui.QWidget()
 		self.tab_2.setObjectName(_fromUtf8("tab_2"))
 		self.tabWidget.addTab(self.tab_2, _fromUtf8(""))
@@ -99,4 +100,3 @@ if __name__ == "__main__":
 	ui.setupUi(MainWindow)
 	MainWindow.show()
 	sys.exit(app.exec_())
-
